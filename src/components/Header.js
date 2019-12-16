@@ -3,19 +3,18 @@ import PropTypes from 'prop-types'
 
 const Header = (props) => (
     <header id="header" style={props.timeout ? {display: 'none'} : {}}>
-        <div className="content">
-            <div className="inner">
-                <h1>#RespectMyCode</h1>
-                <p>A fully responsive site template designed by <a href="https://html5up.net">HTML5 UP</a> and released<br />
-                for free under the <a href="https://html5up.net/license">Creative Commons</a> license.</p>
-            </div>
+        <div>
+            <h1>#RespectMyCode</h1>
+            <h3><b class='bold-mauve'>#1st</b> <b>remote cto school</b> via Slack.</h3>
+            <p><b class='bold-green'>Connecting</b> the next generation of <b class='bold-green'>value contributors, per project</b>.</p>
         </div>
         <nav>
             <ul>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('intro')}}>Intro</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('work')}}>Work</a></li>
+                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('school-manifesto')}}>School Manifesto</a></li>
+                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('recruitment-without-cv')}}>Recruitment Without CV</a></li>
+                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('coding-ceremony')}}>Coding Ceremony</a></li>
                 <li><a href="javascript:;" onClick={() => {props.onOpenArticle('about')}}>About</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('contact')}}>Contact</a></li>
+                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('contact')}}>Become Student</a></li>
             </ul>
         </nav>
     </header>

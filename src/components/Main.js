@@ -3,6 +3,7 @@ import React from 'react'
 import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
+import pic04 from '../images/pic04.jpg'
 
 class Main extends React.Component {
   render() {
@@ -22,64 +23,99 @@ class Main extends React.Component {
         style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
       >
         <article
-          id="intro"
-          className={`${this.props.article === 'intro' ? 'active' : ''} ${
+          id="school-manifesto"
+          className={`${this.props.article === 'school-manifesto' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Intro</h2>
+          <h2 className="major">School Manifesto</h2>
           <span className="image main">
             <img src={pic01} alt="" />
           </span>
           <p>
-            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
-            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
-            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
-            By the way, check out my <a href="#work">awesome work</a>.
+            The purpose of 21st century school is not to teach, but to serve a social function, because knowledge is already accessible from anywhere, to anyone, for free.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
+            Promising developers (respectMyCode's students), contribute to real companies open-source problems, real day-to-day technical problems these companies are facing. The goal is not to compete for the best developer title, but for the most valuable developers one, given a specific project.
+          </p>
+          <p>
+            To help you on this journey, volunteer CTOs and Head Of Engineerings act as mentors, throughout your career.
+          </p>
+          <p>
+            Not all developers can fit all cultures, all management styles, and not all developers can become CTO for all projects. By focusing on where you deliver the most value naturally, you will develop a radical transparency on your skills and culture. That's where your efforts should be directed to, that's how CTOs are built.
+          </p>
+          <p>
+            During the process, thanks to peer-to-peer learning, you will improve your architectural, communication and persuasion skills, while connecting with students able to change your career in the future.
+          </p>
+          <p>
+            Recognition is something you deserve as value contributors. Consequently, once a year, we organize a coding ceremony to award the best contributors in various categories.
+          </p>
+          <p>
+            We're fighting for remote working and the end of cv in tech industry. We always prioritize remote opportunities.
+          </p>
+          <p>
+            <u>SCHOOL FEES</u>: FREE<br/>
+            <u>ACCEPTANCE</u>: ON TEST<br/>
           </p>
           {close}
         </article>
 
         <article
-          id="work"
-          className={`${this.props.article === 'work' ? 'active' : ''} ${
+          id="recruitment-without-cv"
+          className={`${this.props.article === 'recruitment-without-cv' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Work</h2>
+          <h2 className="major">Recruitment Without CV</h2>
           <span className="image main">
             <img src={pic02} alt="" />
           </span>
           <p>
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.
+            A cv is nowadays too subjective, and doesn't take efficiently into account, contextual approaches and radical transparency.
           </p>
           <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.
+            While traditional recruitments focus on hiring and asserting value contributors after recruitment, respectMyCode takes the opposite approach.
+          </p>
+          <p>
+            We focus on asserting value contributors naturally, before they join you. Why? Because radical transparency on cultural fit and skills, is priceless. 
+          </p>
+          <p>
+            Employers also engage with us on radical transparency. How? On making open-source, part of their ugliest and toughest code, they want potential hires to contribute on. It's essential for radical transparency to work both ways. 
+          </p>
+          <p>
+            We want to ensure that you read a cv, only when you're about to hire a value contributor, not before. 
+          </p>
+          {close}
+        </article>
+
+        <article
+          id="coding-ceremony"
+          className={`${this.props.article === 'coding-ceremony' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">Coding Ceremony</h2>
+          <span className="image main">
+            <img src={pic03} alt="" />
+          </span>
+          <p>
+            We acknowledge efforts and contributions of every student involved, and developers in general. That's why once a year we perform a coding ceremony to award best talents in these categories:
+            <ul>
+              <li>Best team</li>
+              <li>Best duo</li>
+              <li>Best architect</li>
+              <li>Best team leader</li>
+              <li>Best CTO</li>
+              <li>Female developer of the year</li>
+              <li>Male developer of the year</li>
+              <li>Best problem solver</li>
+            </ul>
+          </p>
+          <p>
+            These categories may evolve.
           </p>
           {close}
         </article>
@@ -93,16 +129,10 @@ class Main extends React.Component {
         >
           <h2 className="major">About</h2>
           <span className="image main">
-            <img src={pic03} alt="" />
+            <img src={pic04} alt="" />
           </span>
           <p>
-            Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent
-            eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam
-            erat volutpat. Praesent urna nisi, fringila lorem et vehicula
-            lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.
-            Aliquam libero et malesuada fames ac ante ipsum primis in faucibus.
-            Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit
-            amet.
+            RespectMyCode has been created by Edouard Kombo in October 2019, with the aim of creating a closed community of tech thinkers and influencers.
           </p>
           {close}
         </article>
@@ -177,8 +207,9 @@ Main.propTypes = {
   article: PropTypes.string,
   articleTimeout: PropTypes.bool,
   onCloseArticle: PropTypes.func,
+  onOpenArticle: PropTypes.func,
   timeout: PropTypes.bool,
-  setWrapperRef: PropTypes.func.isRequired,
+  setWrapperRef: PropTypes.func.isRequired
 }
 
 export default Main
